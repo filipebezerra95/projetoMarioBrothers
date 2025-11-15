@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Luckiest+Guy&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Mario Bros</title>
+  </head>
+  <body>
+    <div onclick="esconderForm()" class="mascara-formulario"></div>
+    <div class="header">
+      <img src="./img/logo-header.png" alt="logo mario" />
+      <a>Home</a>
+      <a href="./nossos-servicos.html">Nossos Serviços</a>
+      <a onclick="mostrarForm()">Fale Conosco</a>
+    </div>
+    <div class="caixa-mae">
+      <div class="caixa-principal">
+        <img class="logo-mario" src="./img/logo.png" alt="Logo do mario bros" />
+        <p>
+          🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos
+          Com Estilo! 🔧
+        </p>
+        <p>
+          Você já se encontrou em uma situação de emergência com encanamento?
+          Vazamentos inesperados, canos entupidos ou torneiras que não param de
+          pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+          Apresentamos a vocês os encanadores mais famosos do Reino dos
+          Cogumelos - Mario e Luigi!
+        </p>
+
+        <button onclick="mostrarForm()">Entre em Contato</button>
+      </div>
+
+      <div>
+        <img
+          src="./img/mario.png"
+          alt="logo mario e luigi"
+          class="imagem-mario-luigi"
+        />
+      </div>
+    </div>
+
+    <div class="caixa-video">
+      <video src="./img/video.mp4" autoplay muted loop></video>
+      <div class="mascara"></div>
+    </div>
+    <a
+      href="https://wa.me/5512992447626?text=ol%C3%A1%2C%20quero%20ajuda%20dos%20irm%C3%A3os%20mario%20!"
+      class="link-whatsapp"
+    >
+      <img src="./img/whatsapp.png" alt="link para o whatsapp" />
+    </a>
+
+    <form
+      action="https://formcarry.com/s/KljLEYDaNGf"
+      method="POST"
+      enctype="multipart/form-data"
+      class="formulario-fale-conosco"
+    >
+      <input placeholder="Seu Nome" type="text" name="nome" />
+      <input placeholder="Seu telefone" type="tel" name="telefone" />
+      <textarea
+        placeholder="Digite seu problema aqui..."
+        name="duvida"
+      ></textarea>
+      <button type="submit">Pedir orçamento</button>
+    </form>
+  </body>
+  <script src="./scripts.js"></script>
+</html>

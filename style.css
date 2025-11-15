@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fredoka; 
+   
+}
+:root {
+  --mario-red: #E52521;
+  --mario-blue: #2459A6;
+  --mario-yellow: #F7D51D;
+  --mario-green: #3CBC3C;
+  --mario-sky: #5FCDE4;
+  --mario-earth: #8B5A2B;
+
+  --white: #ffffff;
+  --black: #000000;
+}
+body, html {
+    overflow-x: hidden;
+}
+
+
+.logo-mario {
+  height: 200px;
+}
+
+button {
+  color: var(--mario-sky);
+  background-color: var(--mario-red);
+  border-radius: 3px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  
+  margin-top: 30px;
+  font-family: luckiest guy;
+  font-size: 20px;
+}
+
+button:hover {
+  color: var(--mario-blue);
+  font-size: 16px;
+  transition: 1s ease-in-out;
+  border-radius: 10px;
+  background: var(--mario-yellow);
+  transform: translateY(-20px);
+}
+
+.imagem-mario-luigi {
+  height: 500px;
+}
+
+body {
+  height: 100vh;
+}
+
+.caixa-mae {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
+  height: 100vh;
+}
+
+.caixa-principal {
+  width: 40%;
+}
+
+.caixa-video {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+video {
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.mascara {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+  position: fixed;
+  top: 0;
+}
+
+p {
+  color: var(--white);
+  font-size: 20px;
+}
+
+.link-whatsapp img {
+  height: 60px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.link-whatsapp img:hover {
+    transform: translatey(-20px);
+    transition: 1s ease-in-out;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 30px;
+}
+
+.header img {
+  height: 60px;
+}
+
+.header a {
+  color: var(--white);
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: var(--mario-red);
+  font-size: 26px;
+  transition: 0.5s ease-in-out;
+}
+
+.formulario-fale-conosco {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  left: -330px;
+  top: 30%;
+  transition: left 2s ease-in-out;
+}
+
+input {
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 5px;
+  outline-color: var(--mario-green);
+}
+
+textarea {
+  width: 270px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 5px;
+  outline-color: var(--mario-green);
+}
+
+.mascara-formulario {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+  transition: visibility 1s ease-in-out;
+}
+/*pagina de servicos*/
+.nossosServicos h1 {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-left: 50vh;
+  font-size: 65px;
+  color: var(--white);
+}
+
+.nossosServicos .logo-home {
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+
+.nossosServicos .cardServices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+  perspective: 1000px;
+  cursor: pointer;
+  
+}
+
+.nossosServicos .card {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+    padding: 15px;
+    background: #ffffff10;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+    perspective: 800px;
+  
+}
+
+.nossosServicos .video-container {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.video-container video {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.nossosServicos .card:hover {
+  transform: rotateY(12deg) rotateX(6deg) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  
+}
+
+.nossosServicos .cardServices img {
+  width: 250px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+
+
+.nossosServicos .title-cards {
+  position: relative;
+  font-size: 20px;
+  color: var(--mario-green);
+  font-family: "Luckiest Guy";
+  font-weight: 400;
+  margin-top: 15px;
+  text-align: center;
+  display: block;
+  z-index: 5;  
+}
+
+
+
+.nossosServicos h2 {
+  color: var(--mario-sky);
+  margin-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+  
+}
+/*Media Query */
+@media (max-width: 1100px) {
+  p {
+    display: none;
+  }
+
+  .caixa-mae {
+    flex-direction: column;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+
+  .caixa-principal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .imagem-mario-luigi {
+    width: 80vw;
+    height: auto;
+  }
+
+  .header {
+    margin: 20px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header img {
+    display: none;
+  }
+
+  .header a {
+    font-size: 20px;
+  }
+  /* pagina nossos serviços*/
+   
+  /* título principal */
+
+    .nossosServicos h1 {
+        margin: 0 auto;
+        font-size: 28px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* subtítulo */
+    .nossosServicos h2 {
+        font-size: 22px;
+        text-align: center;
+        margin: 20px 0;
+        padding: 0;    
+    }
+
+    /* grid vira 1 por linha */
+    .nossosServicos .cardServices {
+        width: 100%;
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 20px;
+    }
+
+    /* imagens menores */
+    .nossosServicos .cardServices img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* texto dos cards */
+    .nossosServicos .title-cards {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* logo home */
+    .nossosServicos .logo-home {
+        width: 70px;
+        height: 70px;
+        margin: 15px;
+        display: block;
+    }
+}
+
